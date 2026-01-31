@@ -26,6 +26,7 @@ jobs:
           libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev \
           openjdk-11-jdk
         pip install --upgrade pip
+        pip install Cython
         pip install buildozer kivy jnius plyer
 
     - name: Build APK
@@ -37,4 +38,3 @@ jobs:
       with:
         name: kongo-koza.apk
         path: bin/*.apk
-
